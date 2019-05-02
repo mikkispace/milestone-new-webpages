@@ -1,0 +1,104 @@
+/******BASESTYLES*****/
+#container {
+  width: 1400px;
+  margin: 0 30px;
+  background: black;
+}
+
+@font-face {
+  font-family: Milkshake;
+  src: url('../fonts/Milkshake/Milkshake.otf') format('opentype');
+}
+
+h1, h3, h4 {
+  font-family: Milkshake;
+  color: #0ddadf;
+}
+
+.full-width {
+  width: 1400px;
+}
+
+.half-width {
+  width: 700px;
+  float: left;
+}
+
+.third-width {
+  width: 400px;
+  float: left;
+}
+
+
+/*****HEADER-LINKS******/
+#starters {
+  width: 1400px;
+}
+
+h1 {
+  padding: 35px;
+  font-size: 35px;
+}
+
+nav {
+  float: right;
+  padding: 50px 25px;
+}
+
+ nav ul li {
+   display: inline-block;
+ }
+
+ nav ul li a {
+   font-family: font-family: 'Varela Round', sans-serif;
+   font-weight: bold;
+   color: #c6e0ed;
+   text-decoration: none;
+   font-size: 25px;
+   padding-left: 60px;
+ }
+
+/******IMAGE & WELCOME LINE******/
+#welcome {
+  width: 1400px;
+  height: 575px;
+  background: url('../img/chris-ried-512801-unsplash-V2.png');
+  background-size: cover;
+  clear: both;
+}
+
+h2, #howdy {
+  font-family: font-family: 'Varela Round', sans-serif;
+  font-size: 60px;
+  color: #c6e0ed;
+  padding-top: 130px;
+  padding-left: 35px;
+}
+
+span {
+  color: #ff007a;
+  font-variant:small-caps;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/*******PORTFOLIO SECTION*****/
+#work {
+  clear: both;
+}
+
+
+/******ABOUT SECTION*****/
+#about {
+  clear: both;
+}
+
+
+
+/******FOOTER SECTION*****/
+
+h4 {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
