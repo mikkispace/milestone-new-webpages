@@ -75,7 +75,7 @@ h2, #howdy {
   padding-left: 35px;
 }
 
-span {
+#welcome span {
   color: #ff007a;
   font-variant:small-caps;
   font-style: italic;
@@ -178,7 +178,7 @@ p {
 /******CONTACT SECTION******/
 #contact {
     width: 1400px;
-    height: 350px;
+    height: 410px;
 }
 
 #cont-ttl {
@@ -222,6 +222,21 @@ p {
     padding: 15px 15px;
 }
 
+#connect ul {
+    list-style: none;
+}
+
+#connect ul li {
+    display: inline-block;
+}
+
+#connect ul img {
+    padding-right: 48px;
+}
+
+#connect span {
+    font-style: italic;
+}
 
 /******FOOTER SECTION*****/
 #foot-top {
