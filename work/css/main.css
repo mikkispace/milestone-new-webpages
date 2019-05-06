@@ -62,7 +62,7 @@ nav {
 #welcome {
   width: 1400px;
   height: 575px;
-  background: url('../img/chris-ried-512801-unsplash-V2.png');
+  background: url('../img/work-header.png');
   background-size: cover;
   clear: both;
 }
@@ -85,7 +85,7 @@ h2, #howdy {
 /*******PORTFOLIO SECTION*****/
 #work {
     width: 1400px;
-    height: 1300px;
+    
 }
 
 
@@ -97,10 +97,6 @@ h3 {
     padding: 25px;
 }
 
-h3 a {
-    color: #ff007a;
-    text-decoration: underline;
-}
 h4 {
     font-family: 'Varela Round', sans-serif;
     font-size: 25px;
@@ -153,108 +149,4 @@ p {
 
 #proj-3txt {
     padding: 50px 30px 10px 20px;
-}
-
-/******ABOUT SECTION*****/
-
-#about {
-    width: 1400px;
-    height: 550px;
-}
-
-#about-title {
-    text-align: center;
-}
-
-#about-info {
-    clear: both;
-}
-
-#about-txt {
-    padding: 10px 2px 5px 25px;
-}
-
-
-#about-pic {
-    padding: 40px 5px 10px 65px;
-}
-
-/******CONTACT SECTION******/
-#contact {
-    width: 1400px;
-    height: 410px;
-}
-
-#cont-ttl {
-    text-align: center;
-}
-
-#cont-info {
-    clear: both;
-}
-
-#hire {
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-}
-
-#hire a {
-    text-decoration: none;
-    color: #ff8e0a;
-}
-
-#follow {
-    text-align: center;
-    padding: 15px 15px;
-}
-
-#follow ul {
-    list-style: none;
-}
-
-#follow ul li {
-    display: inline-block;
-}
-
-#follow ul img {
-    padding-right: 48px;
-}
-
-#connect {
-    text-align: center;
-    padding: 15px 15px;
-}
-
-#connect ul {
-    list-style: none;
-}
-
-#connect ul li {
-    display: inline-block;
-}
-
-#connect ul img {
-    padding-right: 48px;
-}
-
-#connect span {
-    font-style: italic;
-}
-
-/******FOOTER SECTION*****/
-#foot-top {
-    border-top: 5px solid #0ddadf;
-}
-
-h6 {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    color: #0ddadf;
-    text-align: center;
-}
-
-h6 a {
-    color: #ff8e0a;
-    text-decoration: none;
 }
