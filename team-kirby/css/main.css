@@ -1,0 +1,107 @@
+/*****BASESTYLES*****/
+
+.container {
+    width: 1400px;
+    margin: 50px;
+    background: black;
+}
+
+.full-width {
+    width: 1400px;
+}
+
+.half-width {
+    width: 700px;
+    float: left;
+}
+
+.third-width {
+    width: 435px;
+    height: auto;
+    float: left;
+}
+
+/******HEADER-LINKS******/
+#hdr-blk {
+    width: 1400px;
+    height: 50px;
+    clear: both;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 33px;
+    color: #f4c5d9;
+}
+
+nav {
+  float: right;
+  padding: 15px 25px;
+}
+
+ nav ul li {
+   display: inline-block;
+ }
+
+ nav ul li a {
+   font-family: 'Varela Round', sans-serif;
+   font-weight: bold;
+   color: #f4c5d9;
+   text-decoration: none;
+   font-size: 30px;
+   padding-left: 45px;
+ }
+
+/*******PICTURE-NAME******/
+
+#pic-spot {
+    width: 1400px;
+    height: 1000px;
+    background: url('../img/kirby-header.png');
+    background-size: cover;
+    clear: both;
+}
+
+
+/*******DETAILS*******/
+#about {
+    clear: both;
+}
+
+h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    color: #e7a098;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #9aabd4;
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: #b7b093;
+    text-indent: 20px;
+}
+
+#stats ul {
+    text-indent: 10px;
+}
+li {
+    font-family: 'Verela Round', sans-serif;
+    font-size: 20px;
+    color: #b7b093;
+}
+
+#story {
+    padding: 0 35px 0 35px;
+}
+
+#kirby-pic {
+    padding: 0 0px 0 20px;
+}
