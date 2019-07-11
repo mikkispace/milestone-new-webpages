@@ -1,46 +1,52 @@
 /*****BASESTYLES*****/
-
-.container {
-    width: 1400px;
-    margin: 0 auto;
+@charset "UTF-8"
+    
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
+    margin: 0;
+
 }
 
-.full-width {
-    width: 1400px;
+
+.content-wrapper {
+    width: 100%;
+    margin: 50px 0;
 }
 
-.half-width {
-    width: 700px;
-    float: left;
-}
-
-.third-width {
-    width: 435px;
-    height: auto;
-    float: left;
-}
 
 /******HEADER-LINKS******/
-#hdr-blk {
-    width: 1400px;
-    height: 50px;
-    clear: both;
+.hdr-blk {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-flow: column;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 33px;
+    font-size: 2em;
     color: #f8fc71;
 }
 
 nav {
-  float: right;
   padding: 3px 25px;
 }
 
  nav ul li {
-   display: inline-block;
+   display: flex;
+     justify-content: center;
+     align-items: center;
+     
  }
 
  nav ul li a {
@@ -48,56 +54,65 @@ nav {
    font-weight: bold;
    color: #f4c5d9;
    text-decoration: none;
-   font-size: 30px;
+   font-size: 1.5em;
    padding-left: 45px;
  }
 
 /*******PICTURE-NAME******/
 
-#pic-spot {
-    width: 1400px;
-    height: 1000px;
-    background: url('../img/max-header2.png');
-    background-size: cover;
-    clear: both;
+.hero-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 700px;
+    
 }
 
 
 /*******DETAILS*******/
-#about {
-    clear: both;
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 90%;
 }
 
 h4 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 25px;
+    font-size: 1.5625em;
     color: #f92839;
     text-align: center;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #9aabd4;
     text-align: center;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 1.0625em;
     color: #f8fc71;
-    text-indent: 20px;
+    text-indent: 1.25em;
 }
 
-#stats ul {
-    text-indent: 10px;
+.stats ul {
+    text-indent: .625em;
 }
 li {
     font-family: 'Verela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #f8fc71;
 }
 
-#story {
+.story {
     padding: 0 35px 0 35px;
+}
+
+.max-pic {
+    width: 70%;
 }
