@@ -240,7 +240,7 @@ footer h2 a {
     }
     header nav ul {
         text-align: right;
-        padding: 10px 0 10px 600px;
+        padding: 0 0 0 650px;
     }
     header nav ul li {
         display: inline-block;
