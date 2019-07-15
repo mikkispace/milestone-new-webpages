@@ -208,6 +208,9 @@ footer h2 a {
 
 /*****Desktop*****/
 @media screen and (min-width: 1200px) {
+    .container {
+        margin: 50px auto;
+}
     header {
         display: flex;
         justify-content: space-between;
@@ -228,6 +231,9 @@ footer h2 a {
     header nav ul li {
         display: inline-block;
         padding: 10px;
+    }
+    header img {
+        align-content: center;
     }
     .about {
         justify-content: center;
