@@ -218,20 +218,29 @@ footer h2 a {
         margin: 10px auto;
 }
     header {
+        display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: row wrap;
+    }
+    .hello, .direction {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between
     }
     
     header h1 {
         border-bottom: none;
-        padding: 10px 0;
+        padding: 0 20px 0 15px;
     }
+    
     header nav {
         display: flex;
         justify-content: space-between;
     }
     header nav ul {
         text-align: right;
-        padding: 10px 0;
+        padding: 10px 0 10px 600px;
     }
     header nav ul li {
         display: inline-block;
@@ -245,10 +254,7 @@ footer h2 a {
     .stats, .story, .max-pic {
         flex-basis: 32%;
     }
-    footer {
-        width: 100%;
-        text-align: center;
-    }
+    
     
     
 }
