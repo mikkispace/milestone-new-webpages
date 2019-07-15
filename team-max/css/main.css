@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+@font-face {
+  font-family: Milkshake;
+  src: url('../fonts/Milkshake/Milkshake.otf') format('opentype');
+}
 
 .container {
     max-width: 1400px;
@@ -50,7 +54,7 @@ header {
     color: #f4c5d9;
 }
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: Milkshake, sans-serif;
     font-size: 2em;
     border-bottom: 3px solid #f8fc71;
 }
