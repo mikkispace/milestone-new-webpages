@@ -3,7 +3,8 @@
     <head>
         <title>Michelle Schoofs - Team Kirby</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <meta name="author" content="Michelle Schoofs">
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -19,17 +20,15 @@
 <!--HEADER NAV-->
         
     <header>
-        <div class="full-width"  id="hdr-blk">
+        <div class="hdr-blk">
 
-            <div class="half-width" id="hello">
-              <h1>Michelle Schoofs &dash; Team Kirby</h1>
-            </div>
-                
-            <div class="half-width" id="where">
-            <nav>
+            <div class="hello">
+                <h1><a href="../index.html">Michelle Schoofs</a></h1>
+            
+            <nav class="direction">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#about">About Kirby</a></li>
+                    <li><a href="#kirby-info">About Kirby</a></li>
                     <li><a href="../team-max/index.html">Team Max</a></li>
                 </ul>
               </nav>
@@ -40,23 +39,24 @@
 
 
 <!--PICTURE/NAME-->
-    <div class="full-width">
-        <div class="full-width" id="pic-spot">
-<!--PICTUREPLACEHOLDER-->            
+    <div class="hero">
+        <div class="content-wrapper">
+<!--PICTUREPLACEHOLDER-->
+            <figure class="hero-kirby">
+                <img src="img/kirby-header.png" alt="Kirby the dog"/>
+            </figure>
        </div>
     </div>
     
     
     
 <!--DETAILS-->
-<div class="full-width">
-    <div class="full-width" id="about">
+<div class="about" id="kirby-info">
+    <div class="stats">
         
-        <div class="third-width" id="stats">
-            <h4>Full Name&colon;<br> Kirby Tattertot Fezziwig</h4>
-            <p>Born March 21, 2015</p>
-
-            <h3>Aliases&colon;</h3>
+        <h4>Full Name&colon;<br> Kirby Tatertot Fezziwig</h4>
+            
+            <h3 id="alias">Aliases&colon;</h3>
                 <ul>
                     <li>AKA &dash; Kirbatator</li>
                     <li>AKA &dash; Kirbzilla</li>
@@ -65,25 +65,37 @@
                     <li>AKA &dash; Sassy Pants</li>
                 </ul>
 
-            <h3>Favorite Toys &dash;</h3>
-                <p>White Robot toy and anything else he can get his teeth into.</p>
+            <h3 id="toys">Favorite Toys &dash;</h3>
+                <p>White Robot toy and anything else he can sink his teeth into.</p>
                             
-            <h3>Favorite Snack&colon;</h3>
+            <h3 id="snack">Favorite Snack&colon;</h3>
                 <p>Kirby never met a snack that he didn't like. His Motto is, &apos;I want to go outside, not to go outside, but to get the treat when I come in!&apos;</p>
         </div>
         
-        <div class="third-width" id="story">
-            <h4>Kirby's Story</h4>
-            <p>Kirby was joined the family at two and a half month's old. He was the last of his litter to be picked and spent several weeks all on his own before we picked him up. His first meeting with his new brother, Max, was a bit tenuous, but they soon got along like they had been together all along.</p>
-            <p>Kirby is a sassy boy who likes to play hard, and snack even more. His life's mission seems to be dancing in front of people as they walk through the room and the strategic placement of all toys in the center of everyone's path, so they trip over them. He is very good at his job. He is intimidated by larger dogs and will be sure to let them know who the boss is right up front.</p>
-            <p>Kirby is a sweet boy who loves tummy rubs and but is always a bit too wiggly when being held too long. He also loves shoulder massages and will melt if you hit the right spot. If you give him scratches, he'll snuggle into your legs as long as you give his ears attention. </p>
+        <div class="story">
+            <div class="content-wrapper">
+                <h4>Kirby's Story</h4>
+                
+                <p>Born March 21, 2015</p>
+                
+                <p>Kirby joined the family at two and a half month's old. He was the last of his litter to be picked and spent several weeks all on his own before we picked him up. His first meeting with his new brother, Max, was a bit tenuous, but they soon got along like they had been together all along.</p>
+                
+                <p>Kirby is a sassy boy who likes to play hard, and snack even more. His life's mission seems to be dancing in front of people as they walk through the room and the strategic placement of all toys in the center of everyone's path, so they trip over them. He is very good at his job. He is intimidated by larger dogs and will be sure to let them know who the boss is right up front.</p>
+                
+                <p>Kirby is a sweet boy who loves tummy rubs and but is always a bit too wiggly when being held too long. He also loves shoulder massages and will melt if you hit the right spot. If you give him scratches, he'll snuggle into your legs as long as you give his ears attention. </p>
+            </div>
         </div>
         
-        <div class="third-width" id="kirby-pic">
-            <img src="img/kirby-solo.png" alt="kirby portrait" />
+        <div class="kirby-pic">
+            <figure>
+                <img src="img/kirby-solo.png" alt="kirby portrait" />
+            </figure>
         </div>
-  </div>
-</div>
+    </div>    
+
+<footer>
+    <h2><a href="#top">Top Menu</a></h2>
+</footer>
     
     </body>
 </html>

@@ -1,107 +1,262 @@
 /*****BASESTYLES*****/
 
-.container {
-    width: 1400px;
-    margin: 0 auto;
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
+    margin: 0;
 }
 
-.full-width {
-    width: 1400px;
+@font-face {
+    font-family: Milkshake;
+    src: url('../fonts/Milkshake/Milkshake.otf') format('opentype');
 }
 
-.half-width {
-    width: 700px;
-    float: left;
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
 }
 
-.third-width {
-    width: 435px;
-    height: auto;
-    float: left;
+
+
+/******HEADER******/
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-/******HEADER-LINKS******/
-#hdr-blk {
-    width: 1400px;
-    height: 50px;
-    clear: both;
+.hdr-blk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 33px;
+.hello a {
+    text-decoration: none;
     color: #f4c5d9;
 }
 
-nav {
-  float: right;
-  padding: 15px 25px;
+h1 {
+    font-family: Milkshake, sans-serif;
+    font-size: 2em;
+    border-bottom: 3px solid #f4c5d9;
 }
 
- nav ul li {
-   display: inline-block;
+header nav {
+  text-align: center;
+  padding: 20px 0;
+}
+
+ header nav ul {
+    margin: 0;
+    padding: 0; 
  }
 
  nav ul li a {
-   font-family: 'Varela Round', sans-serif;
-   font-weight: bold;
-   color: #f4c5d9;
-   text-decoration: none;
-   font-size: 30px;
-   padding-left: 45px;
+     font-family: 'Varela Round', sans-serif;
+     font-weight: bold;
+     font-size: 1.5em; 
+     color: #f4c5d9;
+     padding-left: 10px 0;
+     text-decoration: none;
  }
 
 /*******PICTURE-NAME******/
 
-#pic-spot {
-    width: 1400px;
-    height: 1000px;
-    background: url('../img/kirby-header.png');
-    background-size: cover;
-    clear: both;
+.hero-kirby {
+    diplay: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
 
 /*******DETAILS*******/
-#about {
-    clear: both;
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
 h4 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 25px;
+    font-size: 1.5625em;
     color: #e7a098;
     text-align: center;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #9aabd4;
     text-align: center;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 1.0625em;
     color: #b7b093;
-    text-indent: 20px;
 }
 
-#stats ul {
-    text-indent: 10px;
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    width: 100%
 }
-li {
+
+.stats p {
+    width: 90%;
+}
+
+.stats, #alias, #toys, #snack, h3 {
+    width: 100%;
+    margin: 15px 0 10px 0;
+    padding: 0;
+}
+
+.stats ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.stats li {
     font-family: 'Verela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #b7b093;
+    list-style: none;
 }
 
-#story {
-    padding: 0 35px 0 35px;
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.story p {
+    text-align: left;
+    padding: 0 0 0 10px;
 }
 
 #kirby-pic {
-    padding: 0 0px 0 20px;
+    width; 100%;
+}
+
+/********Footer********/
+
+footer {
+    border-top: 1px solid #f4c5d9;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer h2 a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #f4c5d9;
+    text-align: center;
+    margin: 0;
+    padding: 35px 0;
+    text-decoration: none;
+}
+
+
+/********Mobile Styles********/
+
+/*****Tablet*****/
+@media screen and (min-width: 768px) {
+    .about {
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px solid #f4c5d9;
+        width: 100%;
+    }
+    .stats, .story, .kirby-pic {
+        flex-basis: 30%;
+    }
+    .story {
+        border-left: 1px solid #f4c5d9;
+        border-right: 1px solid #f4c5d9;
+        padding: 0 20px;
+    }
+        
+}
+
+/******Desktop******/
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 10px auto;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: row wrap;
+    }
+    .hello, .direction {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+    }
+    header h1 {
+        border-bottom: none;
+        padding: 0 10px 0 15px;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul {
+        text-align: right;
+        padding: 0 0 0 575px;
+    }
+    header nav ul li {
+        display: inline-block;
+        padding: 10px;
+    }
+    .about {
+        justify-content: center;
+        flex-flow: row;
+    }
+    .stats, .story, .kirby-pic {
+        flex-basis: 32%;
+    }
 }
