@@ -170,22 +170,27 @@ p {
 
 /********Footer********/
 footer {
-    border-top: 1px solid #f8fc71;
+    border-top: 2px solid #f8fc71;
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
 }
-
-footer h2 a {
+footer h5 {
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
     font-weight: 300;
     color: #f8fc71;
     text-align: center;
     margin: 0;
-    padding: 35px 0;
+    padding: 10px 15px;
+}
+
+footer h5 a {
+    color: #f8fc71;
+    margin: 0;
     text-decoration: none;
 }
 
@@ -240,7 +245,7 @@ footer h2 a {
     }
     header nav ul {
         text-align: right;
-        padding: 0 0 0 650px;
+        padding: 0 0 0 575px;
     }
     header nav ul li {
         display: inline-block;

@@ -179,22 +179,29 @@ p {
 /********Footer********/
 
 footer {
-    border-top: 1px solid #f4c5d9;
+    border-top: 2px solid #f4c5d9;
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
-footer h2 a {
+footer h5 {
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
+    line-height: 1.5em;
     font-weight: 300;
-    color: #f4c5d9;
+    color: #9aabd4;
     text-align: center;
     margin: 0;
-    padding: 35px 0;
+    padding: 10px 15px;
+}
+
+footer h5 a {
+    color: #f4c5d9;
+    margin: 0;
     text-decoration: none;
 }
 
