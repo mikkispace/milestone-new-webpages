@@ -1,8 +1,27 @@
 /******BASESTYLES*****/
-#container {
-  width: 1400px;
-  margin: 0 auto;
-  background: black;
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @font-face {
@@ -10,143 +29,245 @@
   src: url('../fonts/Milkshake/Milkshake.otf') format('opentype');
 }
 
+/*********Header**********/
+header, footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.starters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flew-flow: row wrap;
+    margin: 0;
+}
+
+.hello a {
+    text-decoration: none;
+    color: #0ddadf;
+}
 h1 {
-  font-family: Milkshake;
-  color: #0ddadf;
+    font-family: Milkshake, sans-serif;
+    font-size: 2.1875em;
+    border-bottom: 3px solid #0ddadf;
+    width: 100%;
 }
 
-.full-width {
-  width: 1400px;
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    width: 100%;
 }
 
-.half-width {
-  width: 650px;
-  float: left;
+header nav ul {
+    margin: 0;
+    padding: 0;
 }
 
-.third-width {
-  width: 435px;
-  float: left;
-}
-
-
-/*****HEADER-LINKS******/
-#starters {
-  width: 1400px;
-}
-
-h1 {
-  padding: 35px;
-  font-size: 35px;
-}
-
-nav {
-  float: right;
-  padding: 50px 25px;
-}
-
- nav ul li {
-   display: inline-block;
- }
-
- nav ul li a {
+nav ul li a {
    font-family: 'Varela Round', sans-serif;
    font-weight: bold;
    color: #c6e0ed;
-   text-decoration: none;
-   font-size: 25px;
-   padding-left: 60px;
+   list-style: none;
+   font-size: 1.5625em;
+   padding: 10px 0;
  }
 
 /******IMAGE & WELCOME LINE******/
-#welcome {
-  width: 1400px;
-  height: 575px;
-  background: url('../img/work-header.png');
-  background-size: cover;
-  clear: both;
+.hero-area {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: url('../img/work-header.png') center no-repeat;
+    background-size: cover;
+    min-height: 496px;
+    width: 100%;
+    margin: 0;
 }
 
-h2, #howdy {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 60px;
-  color: #c6e0ed;
-  padding-top: 130px;
-  padding-left: 35px;
+.welcome {
+    width: 75%;
+    margin: 50px 0;
 }
 
-#welcome span {
-  color: #ff007a;
-  font-variant:small-caps;
-  font-style: italic;
-  letter-spacing: 2px;
+.hero-area, .welcome, h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2em;
+    color: #c6e0ed;
+    margin: 0;
+    padding: 55px 0 0 0;
+}
+
+.welcome, span {
+    color: #ff007a;
+    font-variant:small-caps;
+    font-style: italic;
+    letter-spacing: .125em;
 }
 
 /*******PORTFOLIO SECTION*****/
-#work {
-    width: 1400px;
-    
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+    margin: 0;
 }
 
+img {
+    width: 100%;
+}
 
-h3 {
+figure {
+    margin: 0;
+}
+
+.work-title, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 90%
+}
+
+/******mobile-tablet single rows - desktop 2 per row*******/
+.unplugged, .jubilee, .rougue-pkgs, .holstee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    border-top: 3px solid #ff007a;
+    margin: 10px 0;
+    padding-top: 20px;
+}
+
+.work-title h3 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 29px;
+    font-size: 1.8125em;
     color: #ff007a;
     text-align: center;
-    padding: 25px;
 }
 
 h4 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 25px;
+    font-size: 1.5625em;
     font-style: italic;
     color: #ff007a;
-    line-height: 22px
 }
 
 p {
     font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #ff8e0a;
+    width: 90%;
+    padding: 5px;
 }
 
-#proj-one {
-    padding: 20px 0;
-    clear: both;
-}
-#proj-1pic {
-    padding-left: 45px;
+/********Footer********/
+footer {
+    border-top: 3px solid #ff007a;
 }
 
-#proj-1txt {
-    padding: 55px 30px 76px 20px;
+footer h5 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.75em;
+    color: #0ddadf;
+    font-style: normal;
+    margin: 0;
+    padding: 0 25px;
+}
+footer, a {
+    color: #ff007a;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/********Media Queries********/
+
+/*****Tablet*****/
+@media screen and (min-width: 768px){
+    .portfolio h4 {
+        padding: 0 200px;
+    } 
+    .hero-area, .welcome, h2 {
+        font-size: 2.35em;
+        padding-left: 10px;
+    }
+    footer h5 {
+        padding: 0 3px;
+    }
 }
 
 
-#proj-two {
-    padding: 20px 0;
-    clear: both;
+/******Desktop*****/
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 10px auto;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: row wrap;
+    }
+    header .starters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: row wrap;
+        margin: 0;
+        width: 100%;
+    }
+    .hello, .direction {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    header h1 {
+        border-bottom: none;
+        text-align: left;
+        margin: 0;
+        padding: 30px 0 0 20px;
+        
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 700px;
+    }
+    header nav ul li {
+        display: inline-block;
+        text-align: right;
+        padding: 30px 15px 0 0;
+    }
+    .unplugged, .jubilee, .rougue-pkgs, .holstee {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    flex-basis: 50%;
+    border: none;
+    margin: 0;
+    padding-top: 30px;
+}
+    .portfolio img {
+        min-height: 350px;
+    }
+    .portfolio h4 {
+        padding: 0;
+    }
+    .portfolio p {
+        width: 75%;
+        padding: 0
+    }
 }
 
-#proj-2txt {
-    padding: 60px 30px 72px 20px;
-}
-
-#proj-2pic {
-    padding-right: 30px;
-    
-}
-
-#proj-three {
-    padding: 20px 0;
-    clear:both;
-}
-
-#proj-3pic {
-    padding: 20px 5px 20px 30px;
-}
-
-#proj-3txt {
-    padding: 50px 30px 10px 20px;
-}
