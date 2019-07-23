@@ -128,7 +128,11 @@ img {
 figure {
     margin: 0;
 }
-
+.work-title p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 .work-title, h3 {
     display: flex;
     justify-content: center;
@@ -183,12 +187,12 @@ footer {
 
 footer h5 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 1em;
+    line-height: 1.5em;
     color: #0ddadf;
     font-style: normal;
     margin: 0;
-    padding: 0 25px;
+    padding: 0;
 }
 footer, a {
     color: #ff007a;
@@ -259,10 +263,12 @@ footer, a {
     justify-content: space-around;
     align-content: flex-start;
     flex-flow: row wrap;
-    flex-basis: 50%;
-    border: none;
+    flex-basis: 100%;
     margin: 0;
     padding-top: 30px;
+}
+    h4 {
+    font-size: 2em;
 }
         .portfolio h4 {
         padding: 0;
