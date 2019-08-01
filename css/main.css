@@ -1,8 +1,28 @@
 /******BASESTYLES*****/
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    margin: 0;
+}
+
+
 #container {
-  width: 1400px;
-  margin: 0 auto;
-  background: black;
+    max-width: 1600px;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @font-face {
@@ -10,88 +30,133 @@
   src: url('../fonts/Milkshake/Milkshake.otf') format('opentype');
 }
 
+/*********Header********/
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.starters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+}
+
+.hello, .direction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    width: 80%;
+}
 h1 {
-  font-family: Milkshake;
-  color: #0ddadf;
+    font-family: Milkshake, sans-serif;
+    font-size: 2.1875em;
+    color: #0ddadf;
+    text-align: center;
+    border-bottom: 3px solid #0ddadf;
+    width: 100%;
+    
 }
 
-.full-width {
-  width: 1400px;
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    width: 100%
 }
 
-.half-width {
-  width: 650px;
-  float: left;
+nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
-.third-width {
-  width: 435px;
-  float: left;
-}
-
-
-/*****HEADER-LINKS******/
-#starters {
-  width: 1400px;
-}
-
-h1 {
-  padding: 35px;
-  font-size: 35px;
-}
-
-nav {
-  float: right;
-  padding: 50px 25px;
-}
-
- nav ul li {
-   display: inline-block;
- }
-
- nav ul li a {
+nav ul li a {
    font-family: 'Varela Round', sans-serif;
    font-weight: bold;
    color: #c6e0ed;
    text-decoration: none;
-   font-size: 25px;
-   padding-left: 60px;
+   font-size: 1.5625em;
+   padding-left: 10px;
  }
 
 /******IMAGE & WELCOME LINE******/
+
+.hero-area {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: url('../img/chris-ried-512801-unsplash-V2.png') center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    margin: 0;
+}
+
 #welcome {
-  width: 1400px;
-  height: 575px;
-  background: url('../img/chris-ried-512801-unsplash-V2.png');
-  background-size: cover;
-  clear: both;
+    width: 90%;
+    margin: 50px 0;    
 }
 
-h2, #howdy {
-  font-family: 'Varela Round', sans-serif;
-  font-size: 60px;
-  color: #c6e0ed;
-  padding-top: 130px;
-  padding-left: 35px;
+.hero-area, #welcome, h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5em;
+    color: #c6e0ed;
+    margin: 0;
+    padding-top: 50px;
 }
 
-#welcome span {
-  color: #ff007a;
-  font-variant:small-caps;
-  font-style: italic;
-  letter-spacing: 2px;
+.welcome, span {
+    color: #ff007a;
+    font-size: 1.75em;
+    font-variant:small-caps;
+    font-style: italic;
+    letter-spacing: .125em;
 }
 
 /*******PORTFOLIO SECTION*****/
-#work {
-    width: 1400px;
-    height: 1300px;
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+    margin: 0;
 }
 
+img {
+    width: 100%
+}
+
+figure {
+    margin: 0;
+}
+.work-title, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 90%;
+}
+.work-title p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
 h3 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 29px;
+    font-size: 1.8125em;
     color: #ff007a;
     text-align: center;
     padding: 25px;
@@ -101,96 +166,87 @@ h3 a {
     color: #ff007a;
     text-decoration: underline;
 }
-h4 {
+.unplugged, .jubilee, .rougue, .holstee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    border-top: 3px solid #ff007a;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h4, h5 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 25px;
+    font-size: 1.5625em;
     font-style: italic;
     color: #ff007a;
-    line-height: 22px
+    width: 90%;
+    padding: 5px;
 }
 
 p {
     font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #ff8e0a;
-}
-
-#proj-one {
-    padding: 20px 0;
-    clear: both;
-}
-#proj-1pic {
-    padding-left: 45px;
-}
-
-#proj-1txt {
-    padding: 55px 30px 76px 20px;
+    width: 90%;
+    padding: 5px;
 }
 
 
-#proj-two {
-    padding: 20px 0;
-    clear: both;
-}
-
-#proj-2txt {
-    padding: 60px 30px 72px 20px;
-}
-
-#proj-2pic {
-    padding-right: 30px;
-    
-}
-
-#proj-three {
-    padding: 20px 0;
-    clear:both;
-}
-
-#proj-3pic {
-    padding: 20px 5px 20px 30px;
-}
-
-#proj-3txt {
-    padding: 50px 30px 10px 20px;
-}
 
 /******ABOUT SECTION*****/
 
 #about {
-    width: 1400px;
-    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    border-top: 3px solid #ff007a; 
 }
 
-#about-title {
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 95%;
+}
+
+.about-me h3 {
     text-align: center;
 }
 
-#about-info {
-    clear: both;
-}
 
-#about-txt {
-    padding: 10px 2px 5px 25px;
-}
-
-
-#about-pic {
-    padding: 40px 5px 10px 65px;
-}
 
 /******CONTACT SECTION******/
-#contact {
-    width: 1400px;
-    height: 410px;
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    border-top: 3px solid #ff007a;
 }
 
-#cont-ttl {
+.reach-me {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
     text-align: center;
 }
 
-#cont-info {
-    clear: both;
+.hire, .follow, .support {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+    border-top: 3px solid #ff007a;
 }
 
 #hire {
@@ -199,57 +255,63 @@ p {
     text-decoration: none;
 }
 
-#hire a {
+.hire a {
     text-decoration: none;
     color: #ff8e0a;
 }
 
-#follow {
+.follow .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
-    padding: 15px 15px;
 }
 
-#follow ul {
+.social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50px;
+}
+
+.social-icons p i {
+    font-size: 1.5em;
+    color: #ff007a;
+}
+
+
+.support {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.support ul {
     list-style: none;
 }
 
-#follow ul li {
+.support ul li {
     display: inline-block;
 }
 
-#follow ul img {
-    padding-right: 48px;
+.support ul img {
+    padding-right: 20px;
 }
 
-#connect {
-    text-align: center;
-    padding: 15px 15px;
-}
 
-#connect ul {
-    list-style: none;
-}
-
-#connect ul li {
-    display: inline-block;
-}
-
-#connect ul img {
-    padding-right: 48px;
-}
-
-#connect span {
-    font-style: italic;
-}
 
 /******FOOTER SECTION*****/
-#foot-top {
-    border-top: 5px solid #0ddadf;
+footer {
+    width: 100%;
+    border-top: 3px solid #0ddadf;
 }
 
 h6 {
     font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #0ddadf;
     text-align: center;
 }
@@ -258,3 +320,165 @@ h6 a {
     color: #ff8e0a;
     text-decoration: none;
 }
+
+/********Media Queries********/
+
+/******Tablet*****/
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+    nav ul li a {
+        font-size: 1.75em;
+    }
+    .hero-area #welcome h2 {
+        padding-top: 0;
+    }
+    #welcome h2 {
+        font-size: 2.20em;
+    }
+    #welcome span {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    h4 {
+        font-size: 1.75em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    .social-icons p i {
+        font-size: 1.65em;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;    
+    } 
+    .hire, .follow, .support {
+        align-content: flex-start;
+        flex-basis: 30%;
+    }
+    .follow {
+        border-left: 3px solid #ff007a;
+        border-right: 3px solid #ff007a;
+    }
+    footer {
+        width: 100%;
+    }
+}
+    
+    
+
+    
+/*****Desktop*****/
+@media screen and (min-width: 1200px){
+    .container {
+        margin: 0;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-flow: row wrap;
+    }
+    header .starters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        margin: 0;
+        width: 100%;
+    }
+    .hello, .direction {
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 50%;
+    }
+    header h1 {
+        border-bottom: none;
+        text-align: left;
+        margin: 0;
+        padding: 20px 0 0 20px;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    header nav ul li {
+        display: inline-block;
+        font-size: 1.25em;
+        padding: 20px 0 0 45px;
+    }
+    .hero-area {
+        margin: 0;
+        padding: 0;
+    }
+    #welcome {
+        align-items: flex-start; 
+        margin: 0;
+        width: 75%;
+    }
+    #welcome, h2 {
+        padding-top: 180px;
+    }
+    article, .prjt-link, h4 {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        flex-basis: 48%;
+    }
+    .unplugged, .jubilee, .rougue, .holstee {
+        display: flex;
+        justify-content: space-around;
+        align-content: flex-start;
+        flex-flow: row wrap;
+        flex-basis: 100%;
+        margin: 0;
+        padding-top: 30px;
+    }
+    h4 {
+        font-size: 2em;
+    }
+    .portfolio h4 {
+        padding: 0;
+    }
+    .portfolio p {
+        width: 90%;
+        padding: 0;
+    }
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .about-me, .portrait {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .history, figure {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        flex-basis: 50%
+    }
+    .reach-me {
+        border-top: 3px solid #ff007a;
+        width: 100%;
+    }
+    .hire, .follow, .support {
+        flex-basis: 33%;
+    }
+    footer h6 {
+        line-height: .065em;
+    }
+}
+
+

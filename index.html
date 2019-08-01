@@ -3,13 +3,16 @@
     <head>
         <title>Michelle Schoofs</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Michelle Schoofs">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        
+        <!--Font-Awesome-code-->
+        <script src="https://kit.fontawesome.com/4ae2799762.js"></script>
         
     </head>
 
@@ -18,13 +21,13 @@
 <!--HEADER SECTION-->
 
   <header>
-    <div class="full-width"  id="starters">
+    <div class="starters">
 
-        <div class="half-width">
-          <h1>Michelle M. Schoofs</h1>
+        <div class="hello">
+          <h1>Michelle Schoofs</h1>
         </div>
 
-        <div class="half-width">
+        <div class="direction">
           <nav>
             <ul>
               <li><a href="#about">About</a></li>
@@ -37,59 +40,70 @@
       </div>
   </header>
 
-  <section class="full=width" id="welcome">
-          <div id="howdy">
+<main>
+
+<!--hero-welcome-area-->
+  <section class="hero-area">
+          <div id="welcome">
             <h2>Let's <span>rock</span> some code!</h2>
           </div>
   </section>
 
 
-<main>
+
 <!--PORTFOLIO SECTION-->
 
   <section class="portfolio" id="work">
 
-        <div class="full-width">
-              <h3 id="port-lnk"><a href="work/index.html">My Portfolio</a></h3>
+        <div class="work-title">
+              <h3><a href="work/index.html">My Portfolio</a></h3>
+                <p>Click the images below to view the individual projects, or the link above for my full portfolio page.</p>
         </div>
+     
+    <article class="unplugged" id="4">
+        <figure class="prjt-link">
+            <a href="https://michelleschoofs.com/unplugged-site/" target="_blank"><img src="img/unplugged.PNG" alt="Unplugged Project"/></a>
+        </figure>
+        
+        <h4>Unplugged Project</h4>
+        <p>HTML 5 &amp; CSS, Multi-page Website</p>
+        <p>The Unplugged Project is a multi-page, mock website that I created as part of a Skillcrush course on Responsive Websites. I received some coding, the images, and direction on creating a responsive website. I filled in the missing code and used a Photoshop Comp to create the website you see here.</p>
+    </article>  
       
-     <div class="full-width" id="proj-1">
-          <div class="half-width" id="proj-1pic">
-                <a href="https://michelleschoofs.com/ja-project/"><img src="img/jubilee-thumbnail.png" alt="Jubilee Austin Project"/></a>
-          </div>
-
-        <div class="half-width" id="proj-1txt">
+      
+     <article class="jubilee">
+          <figure class="prjt-link">
+                <a href="https://michelleschoofs.com/ja-project/" target="_blank"><img src="img/jubilee-thumbnail.png" alt="Jubilee Austin Project"/></a>
+         </figure>
+          
             <h4>Jubilee Austin Project</h4>
             <p>HTML 5 &amp; CSS Website</p>
             <p>The Jubilee Austin Project is a mock website that I created as part of a Skillcrush course. I received some of the code and an image of how the final product should look. I filled in the missing code and used a Photoshop Comp to create the website you see here.</p>
-          </div>
-     </div>
+     </article>
 
       
-     <div class="full-width" id="proj-two">
-            <div class="half-width" id="proj-2txt">
+     <article class="rougue">
+         <figure class="prjt-link">
+            <a href="https://www.michelleschoofs.com/rogue-project/" target="_blank"><img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings Project" /></a>
+        </figure>   
+         
               <h4>Rougue Pickings Project</h4>
                   <p>HTML &amp; CSS from Photoshop Design Comp</p>
-                  <p>The Rogue Pickings Project is a mock portfolio website that I created as part of a Skillcrush course. I received a Photoshop Comp and had to develop it from there to make the web site look like the comp. I used PS to pull the image and measurements, then worked the code from there.</p>
-          </div>
-
-        <div class="half-width" id="proj-2pic">
-            <a href="https://www.michelleschoofs.com/rogue-project/"><img src="img/rogue-pickings-thumbnail.png" alt="Rogue Pickings Project" /></a>
-        </div>
-      </div>
+                  <p>The Rogue Pickings Project is a mock portfolio website that I created as part of a Skillcrush course. I received a Photoshop Comp and had to develop it from there to make the web site look like the comp. I used PS to pull the image and measurements, then worked the code from there. Updated from a static to a responsive page.</p>
+                    
+      </article>
 
 
-    <div class="full-width" id="proj-three">
-        <div class="half-width" id="proj-3pic">
-            <a href="https://www.michelleschoofs.com/holstee-project/"><img src="img/holstee-icon.PNG" alt="Holstee Manifesto Project"/></a>
-        </div>
+    <article class="holstee">
+        <figure class="prjt-link">
+            <a href="https://www.michelleschoofs.com/holstee-project/" target="_blank"><img src="img/holstee-icon.PNG" alt="Holstee Manifesto Project"/></a>
+        </figure>
       
-        <div class="half-width" id="proj-3txt">
+        
             <h4>Holstee Manifesto</h4>
                 <p>HTML &amp; CSS Excercise</p>
                 <p>I was given the challenge to create my version of the Holstee Manifesto. I decided to develop it as a full page document using some of my photography and a video of music by the band, Apocalyptica that fit the message within the manifesto.</p>
-        </div>
-    </div>
+    </article>
 
 </section>
 
@@ -98,58 +112,57 @@
 
   <section id="about">
 
-    <div class="full-width" id="about-title">
+    <div class="about-me">
               <h3>About Me</h3>
-    </div>
-      
-      <div class="full-width" id="about-info">
-          
-        <div class="half-width" id="about-txt">
+    
+        <div class="history">
             <p class="style2">I live in Wisconsin with my family and furbabies. I started my career in banking, but after some time, found myself at a crossroads looking for a new direction. Through some research and review of the job market, I had a decision to make. I could continue moving down the same path or discover something new and different. Different can be an exciting prospect, and that lead me to web development where I quickly fell in love with tech. </p>
             
             <p class="style2">I've been involved in artistic endeavors my whole life, and the creative aspect of pulling a website together and making it come to life is fascinating. Once I started, I wanted to learn more. After building my first website, I found something that gave me a new view of the world that I had only been a spectator in prior. I have made the career switch to front-end web development and am using my organizational, problem resolution and detail oriented skills to write clean and elegant code.
             </p>
         </div>
         
-        <div class="half-width" id="about-pic">
+        <figure class="portrait">
            <img src="img/mschoofs.png" alt="Michelle Schoofs" />
-        </div>
+        </figure>
     </div>
   </section>
 
 
 <!--CONTACT SECTION-->
 
- <section class="full-width" id="contact">
+ <section class="contact" id="contact">
      
-     <div class="full-width" id="cont-ttl"> 
+     <div class="reach-me"> 
         <h3>Let's Connect</h3>
-     </div>
-
-<div class="full-width" id="cont-info">
      
-    <div class="third-width" id="hire">
-        <h4>Meet With Me &sol; Hire Me</h4>
+     
+    <div class="hire">
+        <h5>Meet With Me &sol; Hire Me</h5>
         <p><a href="mailto:mms492@michelleschoofs.com"> mms492 &lbrack;&commat;&rbrack; michelleschoofs.com </a></p>
         <p>I'm in Milwaukee, WI<br> Let's Meetup!</p>
     </div>
 
-    <div class="third-width" id="follow">
-        <h4>Follow Me</h4>
-            <ul>
-                <li><a href="https://twitter.com/BelladonnaU" target="_blank"><img src="img/twitter.png" alt="twitter icon" /></a></li>
-                <li><a href="https://www.linkedin.com/in/michelle-schoofs-aabaa668/" target="_blank"><img src="img/linkedin-icon.png" alt="linkedin icon" /></a></li>
-                <li><a href="https://github.com/" target="_blank"><img src="img/github.png" alt="github icon" /></a></li>
-            </ul>
+    <div class="follow">
+        <h5>Follow Me</h5>
+        
+        <div class="social-icons">
+            <p><a href="https://twitter.com/BelladonnaU" target="_blank"><i class="fab fa-twitter"></i></a></p>
+            
+            <p><a href="https://www.linkedin.com/in/michelle-schoofs-aabaa668/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+            
+            <p><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></p>
+            <p><a href="https://www.behance.net/michelleschoofs" target="_blank"><i class="fab fa-behance"></i></a></p>
+     </div>
     </div>
 
-    <div class="third-width" id="connect">
-        <h4>Support Team and Other Things</h4>
+    <div class="support">
+        <h5>Support Team </h5>
             <ul>
                 <li><a href="team-max/index.html"><img src="team-max/img/max-icon.png" alt="max"/></a></li>
                 <li><a href="team-kirby/index.html"><img src="team-kirby/img/kirby-icon.png" alt="kirby"/></a></li>
             </ul>
-                <p><span>Coming Soon</span>&colon; Something Completely Different</p>
+                
     </div>
 </div>
     
@@ -158,10 +171,11 @@
         
 <!--FOOTER SECTION-->
         
-<footer class="full-width">
+<footer>
     
-    <div class="full-width" id="foot-top">
-        <h6>Copyrite &copy; &vert; Michelle Schoofs &vert; <a href="https://unsplash.com/@cdr6934" target="blank"> Header Photo by Chris Ried on Unsplash</a></h6>
+    <div class="foot-top">
+        <h6>Copyrite &copy; &vert; Michelle Schoofs &vert; <a href="https://unsplash.com/@cdr6934" target="blank"> Header Photo by Chris Ried on Unsplash &vert;</a></h6>
+        <h6><a href="#top">Top Menu</a></h6>
     </div>
     
 </footer>
