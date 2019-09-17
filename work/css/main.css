@@ -142,7 +142,7 @@ figure {
 }
 
 /******mobile-tablet single rows - desktop 2 per row*******/
-.unplugged, .jubilee, .rougue-pkgs, .holstee, .lolcat-clock {
+.unplugged, .jubilee, .rougue-pkgs, .holstee, .lolcat-clock, .magic8ball {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +258,7 @@ footer, a {
         text-align: right;
         padding: 30px 15px 0 0;
     }
-    .unplugged, .jubilee, .rougue-pkgs, .holstee, .lolcat-clock {
+    .unplugged, .jubilee, .rougue-pkgs, .holstee, .lolcat-clock, .magic8ball {
     display: flex;
     justify-content: space-around;
     align-content: flex-start;

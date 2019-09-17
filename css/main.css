@@ -166,7 +166,7 @@ h3 a {
     color: #ff007a;
     text-decoration: underline;
 }
-.unplugged, .jubilee, .rougue, .holstee, .lolcat-clock {
+.unplugged, .jubilee, .rougue, .holstee, .lolcat-clock, .magic8ball {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -432,7 +432,7 @@ h6 a {
         flex-flow: row wrap;
         flex-basis: 48%;
     }
-    .unplugged, .jubilee, .rougue, .holstee, .lolcat-clock {
+    .unplugged, .jubilee, .rougue, .holstee, .lolcat-clock, .magic8ball {
         display: flex;
         justify-content: space-around;
         align-content: flex-start;
